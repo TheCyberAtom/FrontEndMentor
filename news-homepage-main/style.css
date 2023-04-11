@@ -47,6 +47,12 @@ ul li a:hover{
     color: var(--Soft-orange);
     cursor: pointer;
 }
+.menu-bar{
+    display: none;
+}
+.menu-bar-closed{
+    display: none;
+}
 .main{
     padding: 0px 150px;
 }
@@ -60,6 +66,9 @@ ul li a:hover{
 .hero-image img{
     width: 100%;
     /* height: 300px; */
+}
+.hero-image-mobile{
+    display: none;
 }
 .info{
     display: flex;
@@ -160,10 +169,219 @@ button:hover{
 .two .image img{
     width: 65%;
 }
+/* ----------------- */
+/*   MEDIUM SCREEN   */
+/* ----------------- */
+@media only screen and (max-width: 1340px){
+    .header{
+        display: flex;
+        padding: 30px 100px;
+    }
+    .main{
+        padding: 0px 100px;
+    }
+}
 
+/* ---------------- */
+/*   SMALL SCREEN   */
+/* ---------------- */
+@media only screen and (max-width: 1024px){
 
-/* MOBILE DESIGN */
+    .header{
+        display: flex;
+        padding: 30px 50px;
+    }
+    .main{
+        padding: 0px 50px;
+    }
+    .title h1{
+        font-size: 2rem;
+        font-weight: 800;
+    }
+    .cta p{
+        font-size: 12px;
+    }
+    button{
+        padding: 15px 25px;
+        letter-spacing: 1px;
+        margin-top: 35px;
+        font-size: 14px;
+    }
+    .card{
+        margin-right: 10px;
+    }
+    .image-text h3{
+        font-size: 1.4rem;
+        padding-bottom: 5px;
+    }
+    .image-text h4{
+        padding-bottom: 5px;
+    }
+    .image-text p{
+        font-size: 14px;
+        line-height: 1.1rem;
+    }
+    .right{
+        margin-left: 20px;
+        padding: 15px 15px;
+    }
+    .latest h3{
+        margin-top: 10px;
+        font-size: 0.9rem;
+    }
+    .latest p {
+        margin-bottom: 30px;
+        font-size: 12px;
+    }
+    .latest-1 p::after, .latest-2 p::after{
+        bottom: -20px;
+    }
+}
 
-@media only screen and (max-width: 600px){
-    
+/* ---------------- */
+/*   MOBILE DESIGN  */
+/* ---------------- */
+@media only screen and (max-width: 768px){
+
+    .header{
+        padding: 10px 10px;
+    }
+    .navbar{
+        position: relative;
+    }
+    .navbar ul{
+        display: none;
+    }
+    .menu-bar{
+        display: block;
+    }
+    .navbar-mobile ul{
+        display: block;
+    }
+    .navbar-mobile .menu{
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        background-color: var(--Off-white);
+        height: 100vh;
+        width: 75vw;
+        z-index: 2;
+    }
+    .navbar-mobile .menu-bar-closed{
+        display: block;
+        position: relative;
+    }
+    .navbar-mobile .menu-bar-closed img{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    .navbar-mobile ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        margin-top: 75px;
+    }
+    ul li{
+        list-style: none;
+        padding-left: 20px;
+        padding-top: 30px;
+    }
+    ul li a{
+        font-size: 20px;
+        color: var(--Very-dark-blue);
+
+    }
+    .main{
+        padding: 10px 10px;
+    }
+    .main .top{
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+    }
+    .hero-image{
+        display: none;
+    }
+    .hero-image-mobile{
+        display: block;
+    }
+    .hero-image-mobile img{
+        width: 100%;
+    }
+    .info{
+        flex-direction: column;
+        padding: 0px 0px;
+    }
+    .title{
+        width: 100%;
+    }
+    .title h1{
+        font-size: 2.5rem;
+    }
+    .cta{
+        padding-left: 0px;
+        width: 100%;
+        font-size: 15px;
+        margin-top: 15px;
+    }
+    button{
+        margin-top: 25px;
+        margin-bottom: 40px;
+        font-size: 15px;
+    }
+    .right{
+        width: 100%;
+        margin-left: 0px;
+        padding: 0px 0px;
+    }
+    .new{
+        color: var(--Soft-orange);
+        margin-bottom: 20px;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+    .latest{
+        padding: 0px 20px;
+    }
+
+    .bottom{
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        width: 100%;
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .image{
+        width: 30%;
+    }
+    .image img{
+        width: 100%;
+    }
+    .image-text{
+        width: 70%;
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+    .one .image img{
+        width: 100%;
+    }
+    .two .image img{
+        width: 100%;
+    }
+    .image-text p{
+        padding-bottom: 0px;
+    }
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
 }

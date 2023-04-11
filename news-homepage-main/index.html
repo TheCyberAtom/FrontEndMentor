@@ -8,19 +8,26 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <header class="header">
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
       <div class="logo">
         <img src="./assets/images/logo.svg" alt="Logo">
       </div>
-      <ul>
-        <li><a>Home</a></li>
-        <li><a>New</a></li>
-        <li><a>Popular</a></li>
-        <li><a>Trending</a></li>
-        <li><a>Categories</a></li>
-      </ul>
+      <div class="menu">
+        <div class="menu-bar-closed" id="menu-bar-closed">
+          <img src="./assets/images/icon-menu-close.svg" alt="menu bar closed">
+        </div>
+        <ul class="nav-active">
+          <li><a>Home</a></li>
+          <li><a>New</a></li>
+          <li><a>Popular</a></li>
+          <li><a>Trending</a></li>
+          <li><a>Categories</a></li>
+        </ul>
+      </div>
+      <div class="menu-bar" id="menu-bar">
+        <img src="./assets/images/icon-menu.svg" alt="menubar">
+      </div>
     </nav>
   </header>
 
@@ -28,11 +35,14 @@
     <div class="top">
       <div class="left">
         <div class="hero-image">
-          <img src="./assets/images/image-web-3-desktop.jpg" alt="web">
+          <img class="desktop" src="./assets/images/image-web-3-desktop.jpg" alt="web">
+        </div>
+        <div class="hero-image-mobile">
+          <img class="mobile" src="./assets/images/image-web-3-mobile.jpg" alt="mobile">
         </div>
         <div class="info">
           <div class="title">
-            <h1>The Bright <br>Future of <br>Web 3.0?</h1>
+            <h1>The Bright <br>Future of Web 3.0?</h1>
           </div>
           <div class="cta">
             <p>We dive into the next evolution of the web that claims to put the power of 
@@ -95,6 +105,6 @@
       </div>
     </div>
   </div>
-
+  <script src="script.js"></script>
 </body>
 </html>
