@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+  }
+  :root {
+    --Red: hsl(1, 90%, 64%);
+    --Blue: hsl(219, 85%, 26%);
+    --White: hsl(0, 0%, 100%);
+    --Very-light-grayish-blue: hsl(210, 60%, 98%);
+    --Light-grayish-blue-1: hsl(211, 68%, 94%);
+    --Light-grayish-blue-2: hsl(205, 33%, 90%);
+    --Grayish-blue: hsl(219, 14%, 63%);
+    --Dark-grayish-blue: hsl(219, 12%, 42%);
+    --Very-dark-blue: hsl(224, 21%, 14%);
+  }
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--Very-light-grayish-blue);
+    width: 100vw;
+    height: 100vh;
+  }
+  .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .notification-container{
+    background-color: var(--White);
+    width: 45%;
+    padding: 0px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 2px var(--Very-light-grayish-blue);
+  }
+  .notification-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 25px 5px;
+  }
+  .title h2{
+    font-size: 1.3rem;
+  }
+  .title h2 span{
+    padding: 1px 10px;
+    border-radius: 5px;
+    background-color: var(--Blue);
+    color: var(--White);
+    font-size: 16px;
+    margin-left: 5px;
+  }
+  .mark-button button{
+    all: unset;
+    cursor: pointer;
+  }
+  .mark-button button:hover{
+    color: var(--Blue);
+  }
+
+  .notification-body{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .notification{
+    background-color: var(--Off-white);
+    margin-bottom: 10px;
+    border-radius: 6px;
+    padding: 10px 0px;
+    display: flex;
+  }
+  .left{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    margin: 0px 5px;
+  }
+  .right{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+  }
+  .left img, .pic img{
+    width: 40px;
+    height: 40px;
+  }
+  p{
+    word-spacing: 2px;
+    font-size: 15px;
+  }
+  .message-title p{
+    color: var(--Grayish-blue);
+  }
+  .message-title span:nth-child(1){
+    font-weight: 800;
+    color: var(--Very-dark-blue);
+    font-size: 16px;
+    margin-right: 2px;
+  }
+  .message-title span:nth-child(2){
+    font-weight: 800;
+    color: var(--Grayish-blue);
+    margin-left: 2px;
+  }
+  .message-title p .club{
+    font-weight: 800;
+    color: var(--Blue);
+  }
+  .message-title span:hover{
+    color: var(--Blue);
+    cursor: pointer;
+  }
+  .message-time{
+    font-size: 14px;
+    color: var(--Grayish-blue);
+  }
+
+  .details{
+    display: none;
+  }
+  .notification-clicked{
+    margin-bottom: 100px;
+  }
+  .notification-clicked .details{
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    padding: 15px;
+    border: 1px solid var(--Light-grayish-blue-2);
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 15px;
+    color: var(--Grayish-blue);
+  }
+  .notification-clicked .details:hover{
+    background-color: var(--Light-grayish-blue-1);
+    cursor: pointer;
+    color: var(--Dark-grayish-blue);
+  }
+  .unread{
+    background-color: var(--Very-light-grayish-blue);
+  }
+  .unread .message-title p{
+    position: relative;
+  }
+  .unread .message-title p::after{
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: red;
+    margin-left: 5px;
+    vertical-align: middle;
+  }
+
+  /* -------------- */
+  /*  Medium screen */
+  /* -------------- */
+
+  @media only screen and (max-width: 1024px){
+    .notification-container{
+        width: 80%;
+    }
+  }
+
+  /* ------------- */
+  /* MOBILE DESIGN */
+  /* ------------- */
+
+  @media only screen and (max-width: 768px){
+    .notification-container{
+        width: 100%;
+        height: 100%;
+    }
+    .notification{
+        margin-bottom: 15px;
+        padding: 15px 10px;
+    }
+    .title h2{
+        font-size: 1.2rem;
+    }
+    .title h2 span{
+        font-size: 15px;
+    }
+    .mark-button button{
+        all: unset;
+        cursor: pointer;
+        font-size: 13.5px;
+    }
+    p{
+        word-spacing: 1px;
+        font-size: 14px;
+    }
+    .left img, .pic img{
+        width: 30px;
+        height: 30px;
+      }
+    .right{
+        margin-left: 10px;
+    }
+    .notification-clicked{
+        margin-bottom: 130px;
+      }
+    .notification-clicked .details{
+        font-size: 13px;
+        padding: 10px;
+        margin-top: 10px;
+      }
+  }

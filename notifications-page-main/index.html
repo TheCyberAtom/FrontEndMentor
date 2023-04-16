@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Notifications page</title>
+</head>
+<body>
+
+  <div class="container">
+    <div class="notification-container">
+      <div class="notification-head">
+        <div class="title">
+          <h2>Notifications <span id="count"></span></h2>
+        </div>
+        <div class="mark-button">
+          <button class="mark-btn" id="mark-btn">Mark all as read</button>
+        </div>
+      </div>
+      <div class="notification-body">
+        <div class="notification one unread">
+          <div class="left">
+            <img src="./assets/images/avatar-mark-webber.webp" alt="dp">
+          </div>
+          <div class="right">
+            <div class="message-title">
+              <p><span>Mark Webber</span> reacted to your recent post <span>My first tournament today!</span></p>
+            </div>
+            <div class="message-time">
+              <p>1m ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="notification two unread">
+          <div class="left">
+            <img src="./assets/images/avatar-angela-gray.webp" alt="dp">
+          </div>
+          <div class="right">
+            <div class="message-title">
+              <p><span>Angela Gray</span> followed you</p>
+            </div>
+            <div class="message-time">
+              <p>5m ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="notification three unread">
+          <div class="left">
+            <img src="./assets/images/avatar-jacob-thompson.webp" alt="dp">
+          </div>
+          <div class="right">
+            <div class="message-title">
+              <p><span>Jacob Thompson</span> has joined your group <span class="club">Chess Club</span></p>
+            </div>
+            <div class="message-time">
+              <p>1 day ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="notification four notification-clicked">
+          <div class="left">
+            <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="dp">
+          </div>
+          <div class="right">
+            <div class="message-title">
+              <p><span>Rizky Hasanuddin</span> sent you a private message</p>
+            </div>
+            <div class="message-time">
+              <p>5 days ago</p>
+            </div>
+            <div class="details">
+              <p>Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+                I'm already having lots of fun and improving my game.</p>
+            </div>
+          </div>
+        </div>
+        <div class="notification five">
+          <div class="left">
+            <img src="./assets/images/avatar-kimberly-smith.webp" alt="dp">
+          </div>
+          <div class="right">
+            <div class="message-title">
+              <p><span>Kimberly Smith</span> commented on your picture</p>
+            </div>
+            <div class="message-time">
+              <p>1 week ago</p>
+            </div>
+          </div>
+          <div class="pic">
+            <img src="./assets/images/image-chess.webp" alt="">
+          </div>
+        </div>
+        <div class="notification six">
+          <div class="left">
+            <img src="./assets/images/avatar-nathan-peterson.webp" alt="dp">
+          </div>
+          <div class="right">
+            <div class="message-title">
+              <p><span>Nathan Peterson</span> reacted to your recent post <span>5 end-game strategies to increase your win rate</span></p>
+            </div>
+            <div class="message-time">
+              <p>2 weeks ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="notification seven">
+          <div class="left">
+            <img src="./assets/images/avatar-anna-kim.webp" alt="dp">
+          </div>
+          <div class="right">
+            <div class="message-title">
+              <p><span>Anna Kim</span> left the group <span class="club">Chess Club</span></p>
+            </div>
+            <div class="message-time">
+              <p>2 weeks ago</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
