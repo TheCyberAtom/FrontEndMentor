@@ -38,7 +38,7 @@
   .heading{
     position: relative;
     text-align: center;
-    margin: 7.5% 0px;
+    margin: 8% 0px;
   }
   .heading h2{
     font-size: 2rem;
@@ -77,7 +77,7 @@
 
   .slider{
     padding: 0px 5px;
-    margin: 30px 0px;
+    margin: 30px 0px 40px 0px;
   }
   .slider input{
     width: 100%;
